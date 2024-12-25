@@ -2121,13 +2121,11 @@ head.appendChild(script);
     </div>
   </b:includable>
   </b:widget>
-</b:section-contents><b:section-contents id='sidebar-right-2-1'>
   <b:widget id='ReportAbuse1' locked='false' title='' type='ReportAbuse'>
     <b:includable id='main'>
   <b:include name='reportAbuse'/>
 </b:includable>
   </b:widget>
-</b:section-contents><b:section-contents id='sidebar-right-2-2'>
   <b:widget id='Label1' locked='false' title='Marcadores' type='Label'>
     <b:widget-settings>
       <b:widget-setting name='sorting'>ALPHA</b:widget-setting>
@@ -2174,7 +2172,6 @@ head.appendChild(script);
   </div>
 </b:includable>
   </b:widget>
-</b:section-contents><b:section-contents id='sidebar-right-3'>
   <b:widget id='BlogArchive1' locked='false' title='Arquivo do blog' type='BlogArchive'>
     <b:widget-settings>
       <b:widget-setting name='showStyle'>FLAT</b:widget-setting>
