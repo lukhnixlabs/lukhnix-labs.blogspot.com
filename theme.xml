@@ -567,9 +567,9 @@ html .mobile .mobile-date-outer, html .mobile .blog-pager {
 ]]></b:skin>
 
     <b:template-skin>
-      <b:variable default='960px' name='content.width' type='length'/>
-      <b:variable default='0' name='main.column.left.width' type='length'/>
-      <b:variable default='310px' name='main.column.right.width' type='length'/>
+      <b:variable default='960px' name='content.width' type='length' value='1280px'/>
+      <b:variable default='0' name='main.column.left.width' type='length' value='0px'/>
+      <b:variable default='310px' name='main.column.right.width' type='length' value='320px'/>
 
       <![CDATA[
       body {
@@ -1765,7 +1765,7 @@ head.appendChild(script);
   </div>
 </b:includable>
             </b:widget>
-            <b:widget id='FeaturedPost1' locked='false' title='' type='FeaturedPost'>
+            <b:widget id='FeaturedPost1' locked='false' title='Postagem em destaque' type='FeaturedPost'>
               <b:widget-settings>
                 <b:widget-setting name='showSnippet'>true</b:widget-setting>
                 <b:widget-setting name='showPostTitle'>true</b:widget-setting>
@@ -1803,12 +1803,12 @@ head.appendChild(script);
   </style>
 </b:includable>
             </b:widget>
-            <b:widget id='PopularPosts1' locked='false' title='' type='PopularPosts'>
+            <b:widget id='PopularPosts1' locked='false' title='Mais visitados' type='PopularPosts'>
               <b:widget-settings>
                 <b:widget-setting name='numItemsToShow'>3</b:widget-setting>
                 <b:widget-setting name='showThumbnails'>true</b:widget-setting>
                 <b:widget-setting name='showSnippets'>true</b:widget-setting>
-                <b:widget-setting name='timeRange'>LAST_YEAR</b:widget-setting>
+                <b:widget-setting name='timeRange'>ALL_TIME</b:widget-setting>
               </b:widget-settings>
               <b:includable id='main'>
   <b:if cond='data:title != &quot;&quot;'><h2><data:title/></h2></b:if>
@@ -1872,7 +1872,7 @@ head.appendChild(script);
         <div class='column-right-inner'>
           <aside>
           <macro:include id='main-column-right-sections' name='sections'>
-            <macro:param default='2' name='num'/>
+            <macro:param default='2' name='num' value='1'/>
             <macro:param default='sidebar-right' name='idPrefix'/>
             <macro:param default='sidebar' name='class'/>
             <macro:param default='true' name='includeBottom'/>
@@ -1915,7 +1915,7 @@ head.appendChild(script);
       <b:section class='foot' id='footer-3' name='Footer' showaddelement='no'>
         <b:widget id='Attribution1' locked='true' title='' type='Attribution'>
           <b:widget-settings>
-            <b:widget-setting name='copyright'/>
+            <b:widget-setting name='copyright'>Luciano Gonçalez (Lukhnix)</b:widget-setting>
           </b:widget-settings>
           <b:includable id='main'>
     <div class='widget-content' style='text-align: center;'>
@@ -2026,7 +2026,7 @@ head.appendChild(script);
   </b:widget>
   <b:widget id='PageList1' locked='false' title='' type='PageList'>
     <b:widget-settings>
-      <b:widget-setting name='pageListJson'><![CDATA[{"home":{"href":"http://lukhnix-labs.blogspot.com/","position":0,"title":"Página inicial"}}]]></b:widget-setting>
+      <b:widget-setting name='pageListJson'><![CDATA[{"home":{"href":"https://lukhnix-labs.blogspot.com/","position":0,"title":"Página inicial"}}]]></b:widget-setting>
       <b:widget-setting name='homeTitle'>Página inicial</b:widget-setting>
     </b:widget-settings>
     <b:includable id='main'>
@@ -2076,7 +2076,7 @@ head.appendChild(script);
     <data:adCode/>
     <b:include name='quickedit'/>
   </div>
-</b:includable>
+  </b:includable>
   </b:widget>
   <b:widget id='Profile1' locked='false' title='Quem sou eu' type='Profile'>
     <b:widget-settings>
