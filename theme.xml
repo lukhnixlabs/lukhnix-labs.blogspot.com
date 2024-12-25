@@ -648,7 +648,7 @@ html .mobile .mobile-date-outer, html .mobile .blog-pager {
 
   <body expr:class='&quot;loading&quot; + data:blog.mobileClass'>
   <b:section class='navbar' id='navbar' maxwidgets='1' name='Navbar' showaddelement='no'>
-    <b:widget id='Navbar1' locked='true' title='Navbar' type='Navbar'>
+    <b:widget id='Navbar1' locked='true' title='Navbar' type='Navbar' version='1'>
       <b:includable id='main'>&lt;script type=&quot;text/javascript&quot;&gt;
     function setAttributeOnload(object, attribute, val) {
       if(window.addEventListener) {
@@ -665,7 +665,7 @@ html .mobile .mobile-date-outer, html .mobile .blog-pager {
       gapi.load(&quot;gapi.iframes:gapi.iframes.style.bubble&quot;, function() {
         if (gapi.iframes &amp;&amp; gapi.iframes.getContext) {
           gapi.iframes.getContext().openChild({
-              url: &#39;https://www.blogger.com/navbar.g?targetBlogID\x3d1891322542914578779\x26blogName\x3dLukhnix+Labs\x26publishMode\x3dPUBLISH_MODE_BLOGSPOT\x26navbarType\x3dLIGHT\x26layoutType\x3dLAYOUTS\x26searchRoot\x3dhttps://lukhnix-labs.blogspot.com/search\x26blogLocale\x3dpt_BR\x26v\x3d2\x26homepageUrl\x3dhttps://lukhnix-labs.blogspot.com/\x26vt\x3d-1910523867657499976&#39;,
+              url: &#39;https://www.blogger.com/navbar.g?targetBlogID\x3d1891322542914578779\x26blogName\x3dLukhnix+Labs\x26publishMode\x3dPUBLISH_MODE_BLOGSPOT\x26navbarType\x3dDARK\x26layoutType\x3dLAYOUTS\x26searchRoot\x3dhttps://lukhnix-labs.blogspot.com/search\x26blogLocale\x3dpt_BR\x26v\x3d2\x26homepageUrl\x3dhttps://lukhnix-labs.blogspot.com/\x26vt\x3d-1910523867657499976&#39;,
               where: document.getElementById(&quot;navbar-iframe-container&quot;),
               id: &quot;navbar-iframe&quot;,
               messageHandlersFilter: gapi.iframes.CROSS_ORIGIN_IFRAMES_FILTER,
@@ -926,26 +926,30 @@ head.appendChild(script);
           <b:section class='main' id='main' name='Main' showaddelement='no'>
             <b:widget id='Blog1' locked='true' title='Postagens no blog' type='Blog'>
               <b:widget-settings>
-                <b:widget-setting name='showDateHeader'>true</b:widget-setting>
-                <b:widget-setting name='style.textcolor'>#ffffff</b:widget-setting>
+                <b:widget-setting name='commentLabel'>comments</b:widget-setting>
                 <b:widget-setting name='showShareButtons'>true</b:widget-setting>
                 <b:widget-setting name='authorLabel'>By</b:widget-setting>
-                <b:widget-setting name='showCommentLink'>true</b:widget-setting>
-                <b:widget-setting name='style.urlcolor'>#ffffff</b:widget-setting>
-                <b:widget-setting name='showAuthor'>false</b:widget-setting>
-                <b:widget-setting name='style.linkcolor'>#ffffff</b:widget-setting>
                 <b:widget-setting name='style.unittype'>TextAndImage</b:widget-setting>
-                <b:widget-setting name='style.bgcolor'>#ffffff</b:widget-setting>
+                <b:widget-setting name='timestampLabel'>Publicado às</b:widget-setting>
                 <b:widget-setting name='reactionsLabel'/>
                 <b:widget-setting name='showAuthorProfile'>false</b:widget-setting>
                 <b:widget-setting name='style.layout'>1x1</b:widget-setting>
-                <b:widget-setting name='showLabels'>true</b:widget-setting>
                 <b:widget-setting name='showLocation'>true</b:widget-setting>
                 <b:widget-setting name='showTimestamp'>true</b:widget-setting>
-                <b:widget-setting name='postsPerAd'>3</b:widget-setting>
-                <b:widget-setting name='showBacklinks'>false</b:widget-setting>
+                <b:widget-setting name='postsPerAd'>1</b:widget-setting>
                 <b:widget-setting name='style.bordercolor'>#ffffff</b:widget-setting>
-                <b:widget-setting name='showInlineAds'>true</b:widget-setting>
+                <b:widget-setting name='showDateHeader'>true</b:widget-setting>
+                <b:widget-setting name='style.textcolor'>#ffffff</b:widget-setting>
+                <b:widget-setting name='showCommentLink'>true</b:widget-setting>
+                <b:widget-setting name='style.urlcolor'>#ffffff</b:widget-setting>
+                <b:widget-setting name='postLocationLabel'>Location:</b:widget-setting>
+                <b:widget-setting name='showAuthor'>false</b:widget-setting>
+                <b:widget-setting name='style.linkcolor'>#ffffff</b:widget-setting>
+                <b:widget-setting name='style.bgcolor'>#ffffff</b:widget-setting>
+                <b:widget-setting name='showLabels'>true</b:widget-setting>
+                <b:widget-setting name='postLabelsLabel'>Labels:</b:widget-setting>
+                <b:widget-setting name='showBacklinks'>false</b:widget-setting>
+                <b:widget-setting name='showInlineAds'>false</b:widget-setting>
                 <b:widget-setting name='showReactions'>false</b:widget-setting>
               </b:widget-settings>
               <b:includable id='main' var='top'>
@@ -1765,92 +1769,6 @@ head.appendChild(script);
   </div>
 </b:includable>
             </b:widget>
-            <b:widget id='FeaturedPost1' locked='false' title='Postagem em destaque' type='FeaturedPost'>
-              <b:widget-settings>
-                <b:widget-setting name='showSnippet'>true</b:widget-setting>
-                <b:widget-setting name='showPostTitle'>true</b:widget-setting>
-                <b:widget-setting name='showFirstImage'>true</b:widget-setting>
-                <b:widget-setting name='useMostRecentPost'>true</b:widget-setting>
-              </b:widget-settings>
-              <b:includable id='main'>
-  <!-- Only display title if it's non-empty -->
-  <b:if cond='data:title != &quot;&quot;'>
-    <h2 class='title'><data:title/></h2>
-  </b:if>
-  <b:include name='content'/>
-
-  <b:include name='quickedit'/>
-</b:includable>
-              <b:includable id='content'>
-  <div class='post-summary'>
-    <b:if cond='data:showPostTitle and data:postTitle != &quot;&quot;'>
-      <h3><a expr:href='data:postUrl'><data:postTitle/></a></h3>
-    </b:if>
-    <b:if cond='data:showSnippet and data:postSummary != &quot;&quot;'>
-      <p>
-        <data:postSummary/>
-      </p>
-    </b:if>
-    <b:if cond='data:showFirstImage and data:postFirstImage != &quot;&quot;'>
-      <img class='image' expr:src='data:postFirstImage'/>
-    </b:if>
-  </div>
-
-  <style type='text/css'>
-    .image {
-      width: 100%;
-    }
-  </style>
-</b:includable>
-            </b:widget>
-            <b:widget id='PopularPosts1' locked='false' title='Mais visitados' type='PopularPosts'>
-              <b:widget-settings>
-                <b:widget-setting name='numItemsToShow'>3</b:widget-setting>
-                <b:widget-setting name='showThumbnails'>true</b:widget-setting>
-                <b:widget-setting name='showSnippets'>true</b:widget-setting>
-                <b:widget-setting name='timeRange'>ALL_TIME</b:widget-setting>
-              </b:widget-settings>
-              <b:includable id='main'>
-  <b:if cond='data:title != &quot;&quot;'><h2><data:title/></h2></b:if>
-  <div class='widget-content popular-posts'>
-    <ul>
-      <b:loop values='data:posts' var='post'>
-      <li>
-        <b:if cond='!data:showThumbnails'>
-          <b:if cond='!data:showSnippets'>
-            <!-- (1) No snippet/thumbnail -->
-            <a expr:href='data:post.href'><data:post.title/></a>
-          <b:else/>
-            <!-- (2) Show only snippets -->
-            <div class='item-title'><a expr:href='data:post.href'><data:post.title/></a></div>
-            <div class='item-snippet'><data:post.snippet/></div>
-          </b:if>
-        <b:else/>
-          <!-- (3) Show only thumbnails or (4) Snippets and thumbnails. -->
-          <div expr:class='data:showSnippets ? &quot;item-content&quot; : &quot;item-thumbnail-only&quot;'>
-            <b:if cond='data:post.featuredImage.isResizable or data:post.thumbnail'>
-              <div class='item-thumbnail'>
-                <a expr:href='data:post.href' target='_blank'>
-                  <b:with value='data:post.featuredImage.isResizable                                  ? resizeImage(data:post.featuredImage, 72, &quot;1:1&quot;)                                  : data:post.thumbnail' var='image'>
-                    <img alt='' border='0' expr:src='data:image'/>
-                  </b:with>
-                </a>
-              </div>
-            </b:if>
-            <div class='item-title'><a expr:href='data:post.href'><data:post.title/></a></div>
-            <b:if cond='data:showSnippets'>
-              <div class='item-snippet'><data:post.snippet/></div>
-            </b:if>
-          </div>
-          <div style='clear: both;'/>
-        </b:if>
-      </li>
-      </b:loop>
-    </ul>
-    <b:include name='quickedit'/>
-  </div>
-</b:includable>
-            </b:widget>
           </b:section>
         </div>
         </div>
@@ -2024,60 +1942,6 @@ head.appendChild(script);
     <b:include name='quickedit'/>
   </b:includable>
   </b:widget>
-  <b:widget id='PageList1' locked='false' title='' type='PageList'>
-    <b:widget-settings>
-      <b:widget-setting name='pageListJson'><![CDATA[{"home":{"href":"https://lukhnix-labs.blogspot.com/","position":0,"title":"Página inicial"}}]]></b:widget-setting>
-      <b:widget-setting name='homeTitle'>Página inicial</b:widget-setting>
-    </b:widget-settings>
-    <b:includable id='main'>
-  <b:if cond='data:title != &quot;&quot;'><h2><data:title/></h2></b:if>
-  <div class='widget-content'>
-    <b:if cond='data:mobile'>
-      <select expr:id='data:widget.instanceId + &quot;_select&quot;'>
-        <b:if cond='data:showPlaceholder'>
-          <option disabled='disabled' hidden='hidden' value=''>
-            <b:attr cond='!data:hasCurrentPage' name='selected' value='selected'/>
-            <b:message name='messages.moveToPage'/>
-          </option>
-        </b:if>
-        <b:loop values='data:links' var='link'>
-          <option expr:value='data:link.href'>
-            <b:attr cond='data:link.isCurrentPage' name='selected' value='selected'/>
-            <data:link.title/>
-          </option>
-        </b:loop>
-      </select>
-      <span class='pagelist-arrow'>&amp;#9660;</span>
-    <b:else/>
-      <ul>
-        <b:loop values='data:links' var='link'>
-          <li>
-            <b:class cond='data:link.isCurrentPage' name='selected'/>
-            <a expr:href='data:link.href'><data:link.title/></a>
-          </li>
-        </b:loop>
-      </ul>
-    </b:if>
-    <b:include name='quickedit'/>
-  </div>
-</b:includable>
-  </b:widget>
-  <b:widget id='AdSense1' locked='false' title='' type='AdSense'>
-    <b:includable id='main'>
-  <div class='widget-content'>
-    <data:adCode/>
-    <b:include name='quickedit'/>
-  </div>
-</b:includable>
-  </b:widget>
-  <b:widget id='AdSense2' locked='false' title='' type='AdSense'>
-    <b:includable id='main'>
-  <div class='widget-content'>
-    <data:adCode/>
-    <b:include name='quickedit'/>
-  </div>
-  </b:includable>
-  </b:widget>
   <b:widget id='Profile1' locked='false' title='Quem sou eu' type='Profile'>
     <b:widget-settings>
       <b:widget-setting name='showaboutme'>true</b:widget-setting>
@@ -2124,132 +1988,6 @@ head.appendChild(script);
   <b:widget id='ReportAbuse1' locked='false' title='' type='ReportAbuse'>
     <b:includable id='main'>
   <b:include name='reportAbuse'/>
-</b:includable>
-  </b:widget>
-  <b:widget id='Label1' locked='false' title='Marcadores' type='Label'>
-    <b:widget-settings>
-      <b:widget-setting name='sorting'>ALPHA</b:widget-setting>
-      <b:widget-setting name='display'>LIST</b:widget-setting>
-      <b:widget-setting name='selectedLabelsList'/>
-      <b:widget-setting name='showType'>ALL</b:widget-setting>
-      <b:widget-setting name='showFreqNumbers'>false</b:widget-setting>
-    </b:widget-settings>
-    <b:includable id='main'>
-  <b:if cond='data:title != &quot;&quot;'>
-    <h2><data:title/></h2>
-  </b:if>
-  <div expr:class='&quot;widget-content &quot; + data:display + &quot;-label-widget-content&quot;'>
-    <b:if cond='data:display == &quot;list&quot;'>
-      <ul>
-        <b:loop values='data:labels' var='label'>
-          <li>
-            <b:if cond='data:blog.url == data:label.url'>
-              <span expr:dir='data:blog.languageDirection'><data:label.name/></span>
-            <b:else/>
-              <a expr:dir='data:blog.languageDirection' expr:href='data:label.url'><data:label.name/></a>
-            </b:if>
-            <b:if cond='data:showFreqNumbers'>
-              <span dir='ltr'>(<data:label.count/>)</span>
-            </b:if>
-          </li>
-        </b:loop>
-      </ul>
-    <b:else/>
-      <b:loop values='data:labels' var='label'>
-        <span expr:class='&quot;label-size label-size-&quot; + data:label.cssSize'>
-          <b:if cond='data:blog.url == data:label.url'>
-            <span expr:dir='data:blog.languageDirection'><data:label.name/></span>
-          <b:else/>
-            <a expr:dir='data:blog.languageDirection' expr:href='data:label.url'><data:label.name/></a>
-          </b:if>
-          <b:if cond='data:showFreqNumbers'>
-            <span class='label-count' dir='ltr'>(<data:label.count/>)</span>
-          </b:if>
-        </span>
-      </b:loop>
-    </b:if>
-    <b:include name='quickedit'/>
-  </div>
-</b:includable>
-  </b:widget>
-  <b:widget id='BlogArchive1' locked='false' title='Arquivo do blog' type='BlogArchive'>
-    <b:widget-settings>
-      <b:widget-setting name='showStyle'>FLAT</b:widget-setting>
-      <b:widget-setting name='yearPattern'>yyyy</b:widget-setting>
-      <b:widget-setting name='showWeekEnd'>true</b:widget-setting>
-      <b:widget-setting name='monthPattern'>MMMM yyyy</b:widget-setting>
-      <b:widget-setting name='dayPattern'>MMM dd</b:widget-setting>
-      <b:widget-setting name='weekPattern'>MM/dd</b:widget-setting>
-      <b:widget-setting name='chronological'>false</b:widget-setting>
-      <b:widget-setting name='showPosts'>true</b:widget-setting>
-      <b:widget-setting name='frequency'>MONTHLY</b:widget-setting>
-    </b:widget-settings>
-    <b:includable id='main'>
-  <b:if cond='data:title != &quot;&quot;'>
-    <h2><data:title/></h2>
-  </b:if>
-  <div class='widget-content'>
-  <div id='ArchiveList'>
-  <div expr:id='data:widget.instanceId + &quot;_ArchiveList&quot;'>
-    <b:include cond='data:style == &quot;HIERARCHY&quot;' data='data' name='interval'/>
-    <b:include cond='data:style == &quot;FLAT&quot;' data='data' name='flat'/>
-    <b:include cond='data:style == &quot;MENU&quot;' data='data' name='menu'/>
-  </div>
-  </div>
-  <b:include name='quickedit'/>
-  </div>
-</b:includable>
-    <b:includable id='flat' var='data'>
-  <ul class='flat'>
-    <b:loop values='data:data' var='i'>
-      <li class='archivedate'>
-        <a expr:href='data:i.url'><data:i.name/></a> (<data:i.post-count/>)
-      </li>
-    </b:loop>
-  </ul>
-</b:includable>
-    <b:includable id='interval' var='intervalData'>
-  <b:loop values='data:intervalData' var='interval'>
-    <ul class='hierarchy'>
-      <li expr:class='&quot;archivedate &quot; + data:interval.expclass'>
-        <b:include cond='data:interval.toggleId' data='interval' name='toggle'/>
-        <a class='post-count-link' expr:href='data:interval.url'>
-          <data:interval.name/>
-        </a>
-        <span class='post-count' dir='ltr'>(<data:interval.post-count/>)</span>
-        <b:include cond='data:interval.data' data='interval.data' name='interval'/>
-        <b:include cond='data:interval.posts' data='interval.posts' name='posts'/>
-      </li>
-    </ul>
-  </b:loop>
-</b:includable>
-    <b:includable id='menu' var='data'>
-  <select expr:id='data:widget.instanceId + &quot;_ArchiveMenu&quot;'>
-    <option value=''><data:title/></option>
-    <b:loop values='data:data' var='i'>
-      <option expr:value='data:i.url'><data:i.name/> (<data:i.post-count/>)</option>
-    </b:loop>
-  </select>
-</b:includable>
-    <b:includable id='posts' var='posts'>
-  <ul class='posts'>
-    <b:loop values='data:posts' var='post'>
-      <li><a expr:href='data:post.url'><data:post.title/></a></li>
-    </b:loop>
-  </ul>
-</b:includable>
-    <b:includable id='toggle' var='interval'>
-  <a class='toggle' href='javascript:void(0)'>
-    <span expr:class='&quot;zippy&quot; + (data:interval.expclass == &quot;expanded&quot; ? &quot; toggle-open&quot; : &quot;&quot;)'>
-      <b:if cond='data:interval.expclass == &quot;expanded&quot;'>
-        &#9660;&#160;
-      <b:elseif cond='data:blog.languageDirection == &quot;rtl&quot;'/>
-        &#9668;&#160;
-      <b:else/>
-        &#9658;&#160;
-      </b:if>
-    </span>
-  </a>
 </b:includable>
   </b:widget>
 </b:section-contents><b:section-contents id='footer-1'/><b:section-contents id='footer-2-1'/><b:section-contents id='footer-2-2'/></html>
