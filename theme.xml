@@ -18,7 +18,7 @@ URL:      www.blogger.com
    ====================
    <Variable name="keycolor" description="Main Color" type="color" default="#1a222a" value="#aa8844"/>
    <Variable name="body.background" description="Body Background" type="background"
-       color="$(body.background.color)" default="#111111 url(//themes.googleusercontent.com/image?id=1OACCYOE0-eoTRTfsBuX1NMN9nz599ufI1Jh0CggPFA_sK80AGkIr8pLtYRpNUKPmwtEa) repeat-x fixed top center" value="#336699 url(https://blogger.googleusercontent.com/img/a/AVvXsEjcYJW49nZvK4m2bu6ljFpfL8xkOUaopXDbXoA5V1wFy5inHkaT-tQ-Cu8q8NYRJ-sQ7ugzKVBMnr9chpEdFMfXobddTOnic6AHmQE8nwkfLuuDaUR9sIDI8-JlgrL166EqrxjyPANDl8i3oxUt9TZY_YSrD1mDDHLUHFKjPexuzUIimZH-EP-fRhQsrZQ9=s1600) no-repeat fixed top center"/>
+       color="$(body.background.color)" default="#111111 url(//themes.googleusercontent.com/image?id=1OACCYOE0-eoTRTfsBuX1NMN9nz599ufI1Jh0CggPFA_sK80AGkIr8pLtYRpNUKPmwtEa) repeat-x fixed top center" value="#000000 url(https://blogger.googleusercontent.com/img/a/AVvXsEjcYJW49nZvK4m2bu6ljFpfL8xkOUaopXDbXoA5V1wFy5inHkaT-tQ-Cu8q8NYRJ-sQ7ugzKVBMnr9chpEdFMfXobddTOnic6AHmQE8nwkfLuuDaUR9sIDI8-JlgrL166EqrxjyPANDl8i3oxUt9TZY_YSrD1mDDHLUHFKjPexuzUIimZH-EP-fRhQsrZQ9=s1600) no-repeat fixed top center"/>
 
    <Group description="Page Text" selector="body">
      <Variable name="body.font" description="Font" type="font"
